@@ -7,9 +7,6 @@
 <project basedir="." default="build" name="JSON">
     <property environment="env"/>
     <property name="DarkStarCore.location" value="../DarkStarCore"/>
-	<property name="DarkStarVM.location" value="../DarkStarVM"/>
-    <property name="TelescopeRackspace.location" value="../Telescope"/>
-    <property name="quickfixj.location" value="../QuickFIXJ"/>
     <property name="ECLIPSE_HOME" value="../../../Program Files (x86)/eclipse"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.6"/>
@@ -57,12 +54,6 @@
     </target>
 	<target depends="jar" name="share">
 		<copy todir="${DarkStarCore.location}/lib">
-			<fileset dir="." includes="${jarfile}"/>
-		</copy>
-		<copy todir="${DarkStarVM.location}/lib">
-			<fileset dir="." includes="${jarfile}"/>
-		</copy>
-		<copy todir="${TelescopeRackspace.location}/lib">
 			<fileset dir="." includes="${jarfile}"/>
 		</copy>
 	</target>
