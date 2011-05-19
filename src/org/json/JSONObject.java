@@ -150,7 +150,9 @@ public class JSONObject {
         this.map = new HashMap<String, Object>();
     }
 
-
+    public Map<String,Object> getMap() {
+    	return map;
+    }
     /**
      * Construct a JSONObject from a subset of another JSONObject.
      * An array of strings is used to identify the keys that should be copied.
